@@ -5,6 +5,7 @@
 //base styles
 * {
     font-family: "Poppins", sans-serif;
+    font-weight: 500;
     margin: 0;
     padding: 0;
     color: #000;
@@ -20,3 +21,4 @@
 @import "blocks/btn";
 @import "blocks/sidepanel";
 @import "blocks/menu";
+@import "blocks/about";
