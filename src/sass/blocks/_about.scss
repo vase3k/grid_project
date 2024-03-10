@@ -1,5 +1,5 @@
 .about {
-    padding: 120px 0 120px;
+    padding: 120px 0 0;
     .container {
         display: grid;
         grid-template-columns: minmax(auto, 400px) minmax(auto, 570px);
@@ -18,11 +18,6 @@
     &__title {
         margin-top: 6px;
         margin-bottom: 0;
-    }
-    &__separator {
-        margin-top: 2px;
-        width: 60px;
-        border: 3px solid $main-color;
     }
     &__text {
         margin-top: 21px;
