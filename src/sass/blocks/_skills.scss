@@ -2,6 +2,7 @@
     padding: 120px 0 0;
     &__wrapper {
         margin-top: 61px;
+        padding: 0 10px;
         display: grid;
         grid-template-columns: repeat(4, 270px);
         grid-template-rows: repeat(2, minmax(270px, auto));
@@ -38,6 +39,46 @@
             margin-top: 15px;
             font-size: 12px;
             line-height: 18px;
+        }
+    }
+    &__footer {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        grid-auto-rows: 70px;
+        grid-gap: 30px 45px;
+    }
+    &__elem {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__elem-title {
+        padding: 8px 0 0 14px;
+        @include before_circle;
+        &:before {
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__elem-percent {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        border: 0;
+        width: 38px;
+    }
+
+    &__elem-bar {
+        border-radius: 4px;
+        background-color: #e8e4de;
+        height: 14px;
+        &_filled {
+            background-color: $main-color;
         }
     }
 }
