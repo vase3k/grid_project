@@ -1,0 +1,102 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        position: relative;
+        margin-top: 6px;
+        margin-bottom: 0;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        margin-top: 6px;
+        text-align: center;
+    }
+    &__separator {
+        margin: 23px auto 0;
+    }
+    &__wrapper {
+        padding: 60px 65px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            padding-left: 50px;
+            position: relative;
+            margin-bottom: 0;
+            @include before_circle;
+            &:before {
+                width: 15px;
+                height: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                z-index: 0;
+            }
+        }
+        ul {
+            list-style-type: none;
+            margin-bottom: 0;
+            li {
+                position: relative;
+                &:after {
+                    content: "";
+                    width: 2px;
+                    height: 100%;
+                    position: absolute;
+                    top: -8px;
+                    left: 7px;
+                    transform: translateX(-22%);
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+            &:before {
+                content: "";
+                width: 36px;
+                height: 36px;
+                background-color: $main-color;
+                position: absolute;
+                left: 50px;
+                bottom: 3px;
+                border-radius: 100%;
+            }
+            &:after {
+                content: "";
+                width: 42px;
+                height: 2px;
+                background-color: #000;
+                position: absolute;
+                left: 8px;
+                bottom: 20px;
+            }
+        }
+        &-title {
+            margin-bottom: 0;
+        }
+        &-location {
+            line-height: 18px;
+        }
+        &-body {
+            padding-left: 50px;
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-icon {
+            position: absolute;
+            bottom: 0;
+            left: 67px;
+        }
+    }
+}
