@@ -20,4 +20,11 @@
     &_fz48 {
         font-size: 48px;
     }
+    &__section-title {
+        @include center_circle;
+    }
+    &__section-subtitle {
+        margin-top: 6px;
+        text-align: center;
+    }
 }

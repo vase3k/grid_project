@@ -9,13 +9,6 @@
         grid-auto-rows: 270px;
         grid-gap: 13px;
     }
-    &__title {
-        @include center_circle;
-    }
-    &__subtitle {
-        margin-top: 6px;
-        text-align: center;
-    }
     &__item {
         border: 1px solid #000;
         padding: 0 30px 25px;
