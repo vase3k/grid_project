@@ -1,0 +1,208 @@
+@media (max-width: 1314px) {
+    .sidepanel {
+        display: none;
+    }
+}
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        padding: 60px 0 0;
+        .container {
+            column-gap: 50px;
+        }
+        &__skills {
+            gap: 30px;
+        }
+    }
+    .resume {
+        padding-top: 90px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 100px;
+            padding: 60px 35px 0;
+        }
+    }
+    .skills {
+        padding: 100px 0 0;
+        &__wrapper {
+            grid-template-columns: repeat(3, 270px);
+            justify-content: center;
+        }
+        &__footer {
+            margin-top: 100px;
+            grid-template-columns: repeat(2, 400px);
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .promo__title {
+        font-size: 39px;
+    }
+    .about {
+        .container {
+            grid-template-columns: 300px 380px;
+            column-gap: 40px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__skills {
+            margin-top: 30px;
+            grid-template: auto / auto;
+            grid-auto-rows: auto;
+            row-gap: 20px;
+        }
+    }
+    .resume {
+        padding-top: 70px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 50px;
+            padding: 50px 25px 0;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(2, 270px);
+            justify-content: center;
+        }
+        &__footer {
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo__title {
+        font-size: 26px;
+        width: 300px;
+        line-height: 39px;
+    }
+    .about {
+        .container {
+            grid-template: 340px auto / auto;
+        }
+        &__subtitle {
+            margin-top: 46px;
+        }
+        &__skills {
+            grid-template: auto / auto auto;
+            grid-auto-rows: auto;
+            margin-top: 20px;
+            grid-gap: 15px;
+        }
+        &__skill {
+            padding-left: 50px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 50px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .menu__block {
+        width: 250px;
+        padding-left: 20px;
+    }
+    .promo {
+        &__btns {
+            margin-top: 32px;
+        }
+        background: url("../img/main_bg.jpg") 57% / cover no-repeat;
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .about {
+        .container {
+            grid-template: 340px auto / auto;
+        }
+        &__subtitle {
+            margin-top: 46px;
+        }
+        &__skills {
+            grid-template: auto / auto;
+            grid-auto-rows: auto;
+        }
+    }
+    .resume {
+        .title__section-subtitle {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .title__section-subtitle {
+            margin-top: 26px;
+        }
+        .separator {
+            margin-top: 14px;
+        }
+        &__wrapper {
+            padding: 41px 5px 0 0;
+        }
+        &__item {
+            &-location {
+                font-size: 12px;
+            }
+            &-head {
+                padding: 45px 0 0 106px;
+            }
+            &-body {
+                margin-top: 20px;
+            }
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        &__wrapper {
+            margin-top: 21px;
+            grid-template-columns: 270px;
+        }
+        .title__section-subtitle {
+            margin-top: 26px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .separator {
+            margin-top: 13px;
+        }
+        &__footer {
+            margin-top: 40px;
+            grid-template-columns: 300px;
+        }
+    }
+}
+
+//height media
+
+@media (max-height: 531px) {
+    .menu__social {
+        bottom: unset;
+        top: 24px;
+        left: 68px;
+    }
+}
