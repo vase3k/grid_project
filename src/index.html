@@ -168,7 +168,13 @@
     <section class="about">
         <div class="container">
             <div class="about__picture">
-                <img src="./img/main_photo.jpg" alt="the great picture of my self">
+                <!-- <img srcset="img/main_photo-min.jpeg 1x,
+                            img/main_photo.jpg 2x" sizes="(max-width: 576px) 280px,
+                    (min-width: 577px) 400px" src=" /img/main_photo.jpg" alt="the great picture of my self"> -->
+                <picture>
+                    <source type="image/webp" srcset="img/main_photo.webp">
+                    <img src="/img/main_photo.jpg" alt="photo">
+                </picture>
             </div>
             <div class="about__content">
                 <div class="title title_fz16 about__subtitle">Про меня</div>
