@@ -36,6 +36,32 @@
             justify-content: center;
         }
     }
+    .portfolio {
+        padding-top: 41px;
+        &__wrapper {
+            margin-top: 41px;
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: center;
+            grid-gap: 20px;
+            .vertical,
+            .horizontal {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+        .separator {
+            margin-top: 13px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 300px 1fr;
+            column-gap: 30px;
+        }
+        &__form {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
 @media (max-width: 991px) {
     .container {
@@ -75,6 +101,18 @@
         &__footer {
             grid-template-columns: repeat(2, 1fr);
             justify-content: center;
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px 45px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template: 200px 1fr / 1fr;
+            grid-gap: 30px;
         }
     }
 }
@@ -117,6 +155,22 @@
     .skills {
         &__wrapper {
             grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+    }
+    .contacts {
+        padding: 40px 0 50px;
+        &__wrapper {
+            padding: 0;
+            display: block;
+        }
+        &__picture {
+            display: none;
         }
     }
 }
@@ -193,6 +247,36 @@
         &__footer {
             margin-top: 40px;
             grid-template-columns: 300px;
+        }
+    }
+    .price {
+        margin-top: 46px;
+        &__wrapper {
+            margin-top: 21px;
+        }
+    }
+    .contacts {
+        &__trigger {
+            grid-template-columns: 219px;
+            justify-content: center;
+        }
+        &__policy {
+            grid-row: 1;
+            padding: 0 20px;
+        }
+        &__subtitle-2 {
+            margin-top: 26px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .separator {
+            margin-top: 13px;
+        }
+        &__form {
+            grid-template-rows: 45px 190px auto;
+        }
+        &__btn {
+            margin-top: 10px;
         }
     }
 }
